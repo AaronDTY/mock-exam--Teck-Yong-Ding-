@@ -1,0 +1,73 @@
+SECTION 1 - KEY INTERACTION:
+My prompt: Please provide pseudocode for a CLI Quiz Generator that loads question/answer pairs from a file, randomly selects N questions, quizzes the user, and reports their score. Please use only techniques taught in our course through Week 10: File reading with basic error handling (Week 6), Lists for storing questions (Week 2), Simple random selection (Week 7), Basic user input validation (Week 6). Please use the "top-down planning" methodology we learned in Week 3 to organize the pseudocode.
+
+AI response: CLI Quiz Generator Pseudocode (Week 3 Top-Down Planning):
+1. MAIN PROGRAM - Load questions from file, Get number of questions from user, Select random questions, Run quiz session, Display final results
+2. LOAD_QUESTIONS(file_path) - Try to open file (Week 6 error handling), Read each line, Split by delimiter to get question/answer pairs, Store in list (Week 2 lists), Handle file errors (Week 6), Return questions list
+3. SELECT_RANDOM_QUESTIONS(questions, num_questions) - Validate input (Week 6), Use random selection (Week 7), Ensure no duplicates, Return selected questions
+4. RUN_QUIZ(selected_questions) - Loop through questions (Week 3), Get user input (Week 6), Compare answers, Track score, Return final score
+
+Course constraint applied: I explicitly told AI to use only Week 1-10 concepts and referenced specific weeks for each technique. When AI initially suggested more advanced error handling, I refined the prompt to emphasize basic try-except structures from Week 6.
+
+---
+
+SECTION 1 - REFINEMENT INTERACTION:
+My prompt: Please improve the previous CLI Quiz Generator pseudocode by adding more detailed file error handling from Week 6, including checking if the file exists, if the format is correct, and handling empty files. Also, ensure it includes user input validation from Week 6 to properly handle user answers.
+
+AI response: IMPROVED LOAD_QUESTIONS(file_path): Check if file_path is not empty (Week 6 validation), Try to open file with specific error handling for FileNotFoundError and other errors, Check if file is empty (Week 6 validation), For each line validate question/answer format and add to questions list if valid. IMPROVED RUN_QUIZ(selected_questions): Validate selected_questions is not empty, For each question get user input with prompt, Strip whitespace from answer (Week 6 input validation), Convert to lowercase for comparison, Check if answer matches (case-insensitive), Provide immediate feedback.
+
+Course constraint applied: I constrained AI to Week 6 level error handling concepts, avoiding advanced exception handling patterns. I specifically requested basic file validation and user input sanitization techniques covered in our course.
+
+---
+
+SECTION 2 - KEY INTERACTION:
+My prompt: Please analyze the following chatbot code and identify all possible errors. This is Week 6 level code using basic variables, conditional statements, and loops. Pay special attention to variable name consistency, logic flow, and potential runtime errors.
+
+AI response: AI identified errors: 1. Line 28 NameError: 'memory' is not defined (should be 'memories'), 2. Line 32 NameError: 'memory' is not defined (should be 'memories'), 3. Potential issue with conversation flow if errors occur, 4. Missing error handling for user input edge cases.
+
+Course constraint applied: I used Week 6 systematic debugging methodology to manually identify errors first, then compared with AI analysis. I constrained AI to focus on basic programming concepts rather than advanced debugging techniques.
+
+---
+
+SECTION 2 - CORRECTION INTERACTION:
+My prompt: Please provide the corrected chatbot code that fixes the variable naming inconsistency errors we identified. Use only Week 6 level basic Python concepts, don't introduce any advanced features.
+
+AI response: [Corrected code with consistent 'memories' variable usage, basic error handling, and Week 6 level complexity]
+
+Course constraint applied: I explicitly prevented AI from introducing advanced features like custom exception classes or sophisticated logging, keeping the solution at Week 6 skill level with basic try-except structures and simple variable management.
+
+---
+
+SECTION 3 - KEY INTERACTION:
+My prompt: Please review this customer feedback analyzer function at Week 8 complexity level. Identify at least 3 issues that can be improved using concepts from our course (Weeks 1-8). Focus particularly on error handling, input validation, and data processing issues.
+
+AI response: [AI identified issues with exception handling, input validation, column checking, result formatting, and categorization completeness]
+
+Course constraint applied: I specified Week 8 complexity level and referenced specific course weeks for each improvement area. I guided AI to focus on concepts we've actually covered rather than advanced data analysis techniques.
+
+---
+
+SECTION 3 - IMPROVEMENT INTERACTION:
+My prompt: Please help me create an improved version of the analyze_feedback function called refined_analyze_feedback. This function should address the issues we identified, but only use techniques taught in our course through Week 8. Specifically: 1. Improve error handling with specific error messages (Weeks 6-8), 2. Add input validation (Week 6), 3. Check for required columns (Week 8), 4. Handle neutral ratings (Week 8), 5. Round results appropriately (Week 4). Please include appropriate doctest examples following our course testing methodology.
+
+AI response: [Improved function with Week 8 level defensive programming, specific error handling, input validation, comprehensive categorization, and proper formatting]
+
+Course constraint applied: I provided specific week references for each improvement and explicitly requested course-level testing methodology. I prevented AI from using advanced pandas features or sophisticated data analysis techniques beyond our curriculum.
+
+---
+
+SECTION 4 - KEY INTERACTION:
+My prompt: I need to implement three core functions from my Section 1 pseudocode: load_quiz_questions, select_random_questions, and run_quiz_session. Please help me create these functions using only techniques taught through Week 8, with appropriate doctest examples and error handling that matches our course skill level.
+
+AI response: [Three complete function implementations with basic file operations, simple random selection, user interaction loops, and Week 6-8 level error handling]
+
+Course constraint applied: I constrained AI to implement functions that match exactly Week 7-8 skill progression, avoiding advanced file processing, sophisticated random algorithms, or complex user interface features. I ensured all code uses only basic Python concepts covered in our course timeline.
+
+---
+
+REFLECTION INTERACTION:
+My prompt: Help me write a 200-word reflection connecting this mock exam practice to specific course materials and assignments. I need to reference actual course weeks and concepts, focusing on how I applied AI partnership guidelines while maintaining academic integrity.
+
+AI response: [200-word reflection with specific course references and authentic academic language]
+
+Course constraint applied: I guided AI to help structure my reflection while ensuring all course references were authentic and matched our actual learning timeline. I used AI as a writing assistant while maintaining my own voice and genuine course connections.
